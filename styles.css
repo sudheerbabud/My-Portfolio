@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:50;
+    padding-left :20%;
+    padding-right: 20%;
+    
+}
+
+fieldset {
+    border: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+address {
+    font-style: normal;
+}
+
+u {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: "\2022"; /* Add bullet symbol */
+    color: #000; /* Change bullet color */
+    font-weight: bold; /* Make bullet bold */
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; /* Adjust bullet position */
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+}

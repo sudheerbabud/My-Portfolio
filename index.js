@@ -60,3 +60,35 @@ document.addEventListener('DOMContentLoaded', function() {
         bar.style.background = `conic-gradient(var(--primary-color) ${progress * 3.6}deg, #e9ecef 0deg)`;
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            alert('Please enter a valid email address');
+            return;
+        }
+
+        // If all validations pass, you can submit the form or send the data to a server
+        alert('Form submitted successfully!');
+        form.reset();
+    });
+
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+});
+

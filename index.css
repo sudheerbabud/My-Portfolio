@@ -167,3 +167,77 @@ body {
     font-weight: bold;
     color: black;
 }
+
+h1 {
+  color: #333;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.icon-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon-content i {
+  font-size: 24px;
+  color: #007bff;
+  margin-right: 15px;
+  min-width: 30px;
+}
+
+.icon-content p {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+form label {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+  .contact-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .icon-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-content i {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

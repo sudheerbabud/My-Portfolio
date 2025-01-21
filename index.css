@@ -218,7 +218,16 @@ form label {
   background-color: #0056b3;
   border-color: #0056b3;
 }
+.social {
+            font-size: 30px; /* Increase icon size */
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 15px;
+        }
 
+        .social a {
+            color: #0ef; /* Change icon color to #0ef */
+        }
 @media (max-width: 767px) {
   .contact-box {
     padding: 20px;

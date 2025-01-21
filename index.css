@@ -1,171 +1,172 @@
 :root {
-    --primary-color: #0ef;
-    --secondary-color: #081b29;
-    --text-color: #ededed;
+  --primary-color: #0ef;
+  --secondary-color: #081b29;
+  --text-color: #ededed;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .navbar {
-    background-color: rgba(8, 27, 41, 0.8) !important;
+  background-color: rgba(8, 27, 41, 0.8) !important;
 }
 
 .hero-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url('/placeholder.svg?height=1080&width=1920');
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
 }
 
 .section-title {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn-custom {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: #00c8d4;
-    transform: translateY(-2px);
+  background-color: #00c8d4;
+  transform: translateY(-2px);
 }
 
 .skill-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  
 }
 
 .skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons a {
-    color: var(--primary-color);
-    font-size: 24px;
-    margin-right: 15px;
-    transition: all 0.3s ease;
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-right: 15px;
+  transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #00c8d4;
-    transform: translateY(-2px);
+  color: #00c8d4;
+  transform: translateY(-2px);
 }
 
 .footer {
-    background-color: rgba(8, 27, 41, 0.9);
-    padding: 20px 0;
+  background-color: rgba(8, 27, 41, 0.9);
+  padding: 20px 0;
 }
 
 .professional-skill {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .professional-skill .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px;
-    font-size: 24px;
-    font-weight: bold;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .contact-form {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: none;
-    border-bottom: 2px solid var(--primary-color);
-    color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  color: white;
 }
 
 .contact-form input,
 .contact-form textarea {
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
 }
 
 @media (max-width: 567px) {
-    .hero-img {
-        display: none;
-    }
+  .hero-img {
+    display: none;
+  }
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 #contact {
-    color: white;
+  color: white;
 }
 
 #contact a {
-    color: var(--primary-color);
-    text-decoration: none;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 #contact a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .radial-progress {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: conic-gradient(var(--primary-color) 0deg, #e9ecef 0deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(var(--primary-color) 0deg, #e9ecef 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .radial-progress::before {
-    content: attr(data-progress) '%';
-    width: 100px;
-    height: 100px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: black;
+  content: attr(data-progress) "%";
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
 }
 
 h1 {
@@ -218,16 +219,18 @@ form label {
   background-color: #0056b3;
   border-color: #0056b3;
 }
-.social {
-            font-size: 30px; /* Increase icon size */
-            display: flex;
-            justify-content: space-evenly;
-            padding: 0 15px;
-        }
 
-        .social a {
-            color: #0ef; /* Change icon color to #0ef */
-        }
+.social {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 15px;
+}
+
+.social a {
+  color: #0ef;
+}
+
 @media (max-width: 767px) {
   .contact-box {
     padding: 20px;
@@ -250,3 +253,33 @@ form label {
     margin-bottom: 10px;
   }
 }
+
+#projects .project-card {
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+#projects .project-card:hover {
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.8);
+}
+
+#projects .project-card .p-4 {
+  background-color: rgba(0, 238, 255, 0.05);
+}
+
+
+.skill-item .progress-bar {
+  background-color: #0ef;
+}
+
+#projects .project-card img,
+#certifications .card img {
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+#projects .project-card img:hover,
+#certifications .card img:hover {
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.8);
+}
+

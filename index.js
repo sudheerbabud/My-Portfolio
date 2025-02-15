@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm")
 
@@ -81,9 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return
     }
 
-    // If all validations pass, you can submit the form or send the data to a server
-    alert("Form submitted successfully!")
-    form.reset()
+    // Open Gmail with pre-filled details
+    const subject = "Contact from Portfolio Website"
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`
+    const mailtoLink = `mailto:sudheerbabud@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`
+    window.location.href = mailtoLink
   })
 
   function isValidEmail(email) {
@@ -91,4 +94,5 @@ document.addEventListener("DOMContentLoaded", () => {
     return emailRegex.test(email)
   }
 })
+
 

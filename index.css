@@ -273,13 +273,12 @@ form label {
 }
 
 #projects .project-card img,
-#certifications .card img {
+#certifications .card{
   box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
   transition: all 0.3s ease;
 }
 
 #projects .project-card img:hover,
-#certifications .card img:hover {
+#certifications .card:hover {
   box-shadow: 0 0 25px rgba(0, 238, 255, 0.8);
 }
-

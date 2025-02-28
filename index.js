@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Typing effect
 const typedTextSpan = document.querySelector("#typed-text")
-const textArray = ["Frontend Developer", "Java Developer", "Web Developer"]
+const textArray = ["Full Stack Developer", "Java Developer", "Web Developer","Backend Developer"]
 const typingDelay = 200
 const erasingDelay = 100
 const newTextDelay = 2000
